@@ -15,11 +15,15 @@ body {
 } 
 
 #gameHeader {
+    width: 258px;
     height: 40px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#score {
+.score {
     font-size: x-large;
     font-weight: bold;
     color: black;
@@ -44,6 +48,10 @@ body {
     border-radius: 5px;
 }
 
+#grid div:last-child {
+    background-color: rgb(200, 231, 221);
+}
+
 @keyframes blink {
     50% {
         opacity: 0.5;
@@ -51,10 +59,8 @@ body {
 }
 
 .food {
-    width: 20px;
-    height: 20px;
-    background-color: red;
+    width: 25px;
+    height: 25px;
     position: absolute;
-    border-radius: 50%;
     animation: blink 1s infinite;
 }
